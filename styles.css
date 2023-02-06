@@ -1,0 +1,96 @@
+/* General Styles*/
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+/* Styles for container div and the article*/
+
+.container {
+  margin: 10% auto;
+  display: flex;
+  background-color: hsl(0, 0%, 95%);
+  width: fit-content;
+}
+article {
+  margin: auto;
+  height: 25em;
+  padding: 1.8em;
+  width: 17em;
+}
+article img {
+  margin-bottom: 1.5em;
+}
+article h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: xx-large;
+  color: hsl(0, 0%, 95%);
+  margin-bottom:0.5em
+}
+article p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 4.5em;
+}
+
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 9px 0 0 9px;
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 9px 9px 0;
+}
+
+/* Button styles */
+
+article button {
+  display: block;
+  padding: 0 2em;
+  min-height: 2.5em;
+  border: 0;
+  border-radius: 2em;
+  background-color: hsl(0, 0%, 95%);
+  position: absolute;
+  cursor: pointer;
+}
+.sedans button {
+  color: hsl(31, 77%, 52%);
+}
+.suvs button {
+  color: hsl(184, 100%, 22%);
+}
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+
+
+.sedans button:active,
+.suvs button:active,
+.luxury button:active {
+  background: none;
+  border: 2px solid;
+  color: hsl(0, 0%, 95%);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .sedans {
+    border-radius: 9px 9px 0 0;
+  }
+  .luxury {
+    border-radius: 0 0 9px 9px;
+  }
+  .container {
+    flex-flow: column wrap;
+  }
+}
