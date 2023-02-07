@@ -74,9 +74,9 @@ article button {
 }
 
 
-.sedans button:active,
-.suvs button:active,
-.luxury button:active {
+.sedans button:hover,
+.suvs button:hover,
+.luxury button:hover {
   background: none;
   border: 2px solid;
   color: hsl(0, 0%, 95%);
